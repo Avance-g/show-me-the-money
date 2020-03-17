@@ -68,15 +68,19 @@ button.btn:hover {
 .container.header {
     height: 100%;
     align-items: center;
-    background: url('../src/arrow-down.png') no-repeat center bottom;
 
+}
+
+.arrow-down {
+    background: url('../src/arrow-down.png') no-repeat;
+    background-position: center 95%;
 }
 
 .container article {
     flex-basis: 70%;
 }
 
-.container article h2 {
+ h2 {
     color: #005662;
     margin-bottom: 15px;
     font-size: 3.8em;
@@ -94,6 +98,11 @@ button.btn:hover {
     border-radius: 50px;
     font-size: 1.7em;
 }
+
+.container aside {
+    flex-basis: 30%;
+}
+
 
 .countdown {
     background-color: #005662 ;
@@ -127,4 +136,34 @@ button.btn:hover {
 
 .countdown div span {
     font-size: 2.2em;
+}
+
+main {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container.main {
+    flex-wrap: wrap; 
+    height: 600px;
+}
+
+.learn-list {
+    margin-top: -150px;
+    flex-wrap: wrap;
+}
+
+.learn {
+    height: 150px;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.learn img {
+    width: 60px;
+    margin-bottom: 8px;
+}
+
+.learn h4 {
+    margin-bottom: 4px;
 }

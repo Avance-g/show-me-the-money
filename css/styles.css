@@ -45,8 +45,8 @@ button.btn {
     height: 40px;
     border: none;
     margin: auto 30px;
-    font-weight: 700; 
-    font-size: 1.03em;   
+    font-weight: 700;
+    font-size: 1.03em;
 }
 
 button.btn:hover {
@@ -112,6 +112,12 @@ button.btn:hover {
     margin-left: 200px;
     color: #FFF;
     text-align: center;
+
+
+}
+
+.numero{
+    font-size: 4rem;
 }
 
 .countdown h3 {
@@ -138,13 +144,16 @@ button.btn:hover {
     font-size: 2.2em;
 }
 
+
+
+
 main {
     margin: 50px auto;
     text-align: center;
 }
 
 .container.main {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     height: 600px;
 }
 

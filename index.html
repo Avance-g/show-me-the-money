@@ -17,6 +17,35 @@
     <!-- END Google Analytics -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+      var target_date = new Date("March 20, 2020").getTime();
+      var dias, horas, minutos, segundos;
+      var regressiva = document.getElementById("regressiva");
+
+      setInterval(function () {
+
+          var current_date = new Date().getTime();
+          var segundos_f = (target_date - current_date) / 1000;
+
+      dias = parseInt(segundos_f / 86400);
+          segundos_f = segundos_f % 86400;
+
+          horas = parseInt(segundos_f / 3600);
+          segundos_f = segundos_f % 3600;
+
+          minutos = parseInt(segundos_f / 60);
+          segundos = parseInt(segundos_f % 60);
+
+      document.getElementById('dia').innerHTML = dias;
+      document.getElementById('hora').innerHTML = horas;
+      document.getElementById('minuto').innerHTML = minutos;
+      document.getElementById('segundo').innerHTML = segundos;
+
+
+      }, 1000);
+    </script>
+
 </head>
 
 <body>
@@ -32,6 +61,7 @@
                 <button class="btn">Comprar</button>
             </div>
         </nav>
+
         <section class="section-header">
             <div class="opacity">
                 <div class="container header arrow-down">
@@ -47,27 +77,19 @@
                             <ul>
                                 <li>
                                     <p>dias</p>
-                                    <div>
-                                        <span id="day">0</span>
-                                    </div> 
+                                    <p class="numero" id="dia"></p>
                                 </li>
                                 <li>
                                     <p>horas</p>
-                                    <div>
-                                        <span id="hour">00</span>
-                                    </div> 
+                                    <p class="numero" id="hora"></p>
                                 </li>
                                 <li>
                                     <p>minutos</p>
-                                    <div>
-                                        <span id="minute">00</span>
-                                    </div> 
+                                    <p class="numero" id="minuto"></p>
                                 </li>
                                 <li>
                                     <p>segundos</p>
-                                    <div>
-                                        <span id="second">00</span>
-                                    </div> 
+                                    <p class="numero" id="segundo"></p>
                                 </li>
                             </ul>
                         </div>

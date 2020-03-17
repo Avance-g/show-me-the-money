@@ -176,3 +176,94 @@ main {
 .learn h4 {
     margin-bottom: 4px;
 }
+
+.container .mentores{
+    background: url('../src/forma_vetor.png') no-repeat center left #005662;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    min-height: 814px;
+}
+
+.container .mentores .img-mentores img{
+    width: 478px;
+    height: 478px;
+    object-fit: cover;
+}
+
+.container .mentores .desc-mentores h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: left;
+}
+
+.container .mentores .desc-mentores p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 58px;
+    text-align: left;
+    padding-top: 20px;
+    max-width: 65%;
+}
+
+.container .sobre-avance{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.container .sobre-avance h3 {
+    font-weight: 500;
+    font-size: 4em;
+    line-height: 75px;
+    color: #000000;
+    text-align: left;
+}
+
+.container .sobre-avance p{
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 20px;
+
+}
+
+footer {
+    background: #585858;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+footer .container .info h5 {
+    font-size: 2.25em;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer .container .redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer .container .redes-sociais i {
+    text-align: right;
+    text-align: right;
+    font-size: 1.8125em;
+    padding-right: 30px;
+}

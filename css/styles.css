@@ -42,7 +42,7 @@ a:hover {
     color: #012429;
 }
 
-button.btn {
+a.btnComprar {
     background-color: #FFC700;
     color: #212121;
     width: 300px;
@@ -51,9 +51,32 @@ button.btn {
     margin: auto 30px;
     font-weight: 700;
     font-size: 1.03em;
+    text-align: center;
+    padding-top: 15px;
 }
 
-button.btn:hover {
+a.btnComprar:hover {
+    background-color: rgb(160, 125, 0);
+    cursor: pointer;
+}
+
+a.btn {
+    background: #FFC700;
+    border-radius: 27px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    color: #212121;
+    width: 260px;
+    height: 55px;
+    text-transform: uppercase;
+    padding-top: 11px;
+    margin-top: 30px;
+    display: block;
+}
+
+a.btn:hover {
     background-color: rgb(160, 125, 0);
     cursor: pointer;
 }
@@ -93,14 +116,6 @@ h2 {
 
 .container article p {
     font-size: 1.6em;
-}
-
-.container article .btn{
-    width: 230px;
-    height: 2em;
-    margin-top: 30px;
-    border-radius: 50px;
-    font-size: 1.7em;
 }
 
 .container aside {
@@ -177,6 +192,8 @@ main {
 
 .learn h4 {
     margin-bottom: 4px;
+    font-size: 40px;
+    color: #424242;
 }
 
 .container .mentores{
@@ -206,14 +223,27 @@ main {
     text-align: left;
 }
 
+.container .mentores .desc-mentores h3::after{
+    background-color: #4FB3BF;;
+    content: '';
+    display: block;
+    width: 144px;
+    height: 18px;
+    margin-top: 10px;
+}
+
 .container .mentores .desc-mentores p{
     color: #fff;
     font-weight: 400;
     font-size: 2em;
     line-height: 58px;
     text-align: left;
-    padding-top: 20px;
-    max-width: 65%;
+    padding-top: 30px;
+    max-width: 80%;
+}
+
+.container .mentores .desc-mentores p span{
+    color: #4FB3BF;
 }
 
 .container .sobre-avance{
@@ -225,21 +255,27 @@ main {
 }
 
 .container .sobre-avance h3 {
+    font-family: Roboto;
     font-weight: 500;
-    font-size: 4em;
+    font-size: 64px;
     line-height: 75px;
-    color: #000000;
     text-align: left;
+    color: #005662;
 }
 
 .container .sobre-avance p{
-    font-size: 36px;
-    line-height: 42px;
-    color: #000000;
-    text-align: left;
-    text-transform: uppercase;
-    padding-top: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+    color: #585858;
 
+
+}
+
+.container .img-sobre img {
+     width: 932px;
+     height: 663px;
+     object-fit: cover;
 }
 
 footer {
@@ -247,6 +283,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 50px 0;
 }
 
 footer .container .info {
@@ -275,7 +312,89 @@ footer .container .redes-sociais i {
     padding-right: 30px;
 }
 
+#popup{
+    display: none;
+}
+
+.popup__wrapper {
+    background: rgba(0, 0, 0, .75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.popup__container{
+    background: #4FB3BF;
+    border-radius: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 923px;
+    height: auto;
+    color: #fff;
+    padding: 50px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.popup__container h3 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+}
+
+.popup__container p {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.popup__container .participar{
+    background: #FFC700;
+    border-radius: 27px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43px;
+    color: #212121;
+    width: 300px;
+    height: 60px;
+    text-transform: uppercase;
+    padding-top: 11px;
+    margin-top: 30px;
+    display: block;
+    align-self: flex-end;
+}
+
+.popup__container .close{
+    position: absolute;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+}
+
+.popup__container .close img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
 @media(max-width: 550px) {
+
+    .container.main{
+        height: auto;
+    }
+    
+    h2{
+        font-size: 2.8em;
+    }
+
     header .btn {
         margin-right: 0;
     }
@@ -292,7 +411,43 @@ footer .container .redes-sociais i {
     .countdown {
         font-size: 0.7em;
         width: 100%;
+    }  
+
+    #sobre{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
     }
+
+    .container .img-sobre img{
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }  
+
+    .container .sobre-avance h3{
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .container .sobre-avance p{
+        margin-top: 30px;
+    }
+
+    .container .mentores .desc-mentores h3{
+        font-size: 2em;
+    }
+
+    ul.learn-list{
+        flex-direction: column;
+
+    }
+
+    .learn{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
 }
 
 @media(max-width: 700px) {
@@ -312,7 +467,6 @@ footer .container .redes-sociais i {
     }
     ul.learn-list{
         margin-top: 30px;
-        padding-bottom: 100px;
     }
     .arrow-down {
         background-image: none;
@@ -323,6 +477,7 @@ footer .container .redes-sociais i {
     .container .sobre-avance{
         padding: 0;
         font-size: 0.8em;
+        flex-direction: column;
     }
     footer .container .info h5 {
         font-size: 0.8em;

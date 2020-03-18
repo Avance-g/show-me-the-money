@@ -48,13 +48,13 @@
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="#1" class="brand"><img src="src/Logo.png" alt=""></a>
+                <a href="#1" class="brand"><img src="src/Logo.png" alt="Avance"></a>
                 <div></div>
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#palestrante">Palestrante</a></li>
                 </ul>
-                <button class="btn">Comprar</button>
+                <a class="btnComprar" href="https://www.sympla.com.br/avance-na-sua-vida-profissional__825158">Comprar</a>
             </div>
         </nav>
 
@@ -63,9 +63,11 @@
                 <div class="container header arrow-down">
                     <article>
                         <h2>Avance na sua vida profissional</h2>
-                        <p>A <strong>Avance</strong>, em parceria com XXXXXXX, irá realizar no dia  19/03 um evento on-line para você entender o que precisa fazer para <strong>conseguir o emprego que deseja</strong></p>
+                        <p>
+                            A <strong>Avance</strong>, em parceria com Fran Czilusmiaki, irá realizar no dia 19/03 um evento on-line para você entender o que precisa fazer para <strong>conseguir o emprego que deseja.</strong>
+                        </p>
                         <div id="button">
-                            <button class="btn">Participar</button>
+                            <a class="btn" href="https://www.sympla.com.br/avance-na-sua-vida-profissional__825158">Participar</a>
                         </div>
                     </article>
                     <aside>
@@ -102,51 +104,36 @@
             <ul class="learn-list">
                 <li class="learn">
                     <img src="src/avatar.png" alt="">
-                    <h4>Tal Coisa</h4>
-                    <p>Que irá ajudar nisso,<br> nisso e nisso</p>
+                    <h4>Revisão de <br/>currículo</h4>
                 </li>
                 <li class="learn">
                     <img src="src/avatar.png" alt="">
-                    <h4>Tal Coisa</h4>
-                    <p>Que irá ajudar nisso,<br> nisso e nisso</p>
+                    <h4>Mapeamento <br/>Comportamental</h4>
                 </li>
                 <li class="learn">
                     <img src="src/avatar.png" alt="">
-                    <h4>Tal Coisa</h4>
-                    <p>Que irá ajudar nisso,<br> nisso e nisso</p>
-                </li>
-                <li class="learn">
-                    <img src="src/avatar.png" alt="">
-                    <h4>Tal Coisa</h4>
-                    <p>Que irá ajudar nisso,<br> nisso e nisso</p>
-                </li>
-                <li class="learn">
-                    <img src="src/avatar.png" alt="">
-                    <h4>Tal Coisa</h4>
-                    <p>Que irá ajudar nisso,<br> nisso e nisso</p>
-                </li>
-                <li class="learn">
-                    <img src="src/avatar.png" alt="">
-                    <h4>Tal Coisa</h4>
-                    <p>Que irá ajudar nisso,<br> nisso e nisso</p>
+                    <h4>Padrão <br/>Mental</h4>
                 </li>
             </ul>
         </div>
         <div class="container">
             <div id="palestrante" class="mentores">
                 <div class="img-mentores">
-                    <img src="src/foto-mentora.png" alt="">
+                    <img src="src/foto-mentora.png" alt="Fran Czilusmiaki">
                 </div>
                 <div class="desc-mentores">
                     <h3>Saiba quem será <br/>sua mentora</h3>
-                    <p>Fulana Tal, formada em tal coisa, trabalha com tal coisa, <br/>e é muito boa em tal coisa, tal coisa, tal coisa e tal coisa, te ajudando com tal coisa para você tal coisa</p>
+                    <p>Fran Czilusmiaki é CEO da Chica Mara. Realiza gestão de pessoas, analisa currículos, trabalha com mapeamento mental e irá ajudar <span>você</span> a avançar na sua vida profissional.</p>
                 </div>
             </div>
         </div>
         <div id="sobre" class="container">
             <div class="sobre-avance">
-                <h3>Algumas palavras sobre <br/>a AVANCE.</h3>
-                <p>TEXTO A RESPEITO DA EMPRESA</p>
+                <h3>Algumas palavras <br/>sobre a AVANCE.</h3>
+                <p>A Avance nasceu com o propósito de ajudar as pessoas: queremos conectar grandes profissionais com quem não costuma ter acesso aos seus ricos conteúdos. Para isso, trabalhamos em parceria com quem está se destacando no mercado e disposto a compartilhar de forma dinâmica um pouco do que sabe. Venha avançar conosco! </p>
+            </div>
+            <div class="img-sobre">
+                <img src="src/sobre-empresa.jpg" alt="Avance">
             </div>
         </div>
     </main>
@@ -154,17 +141,49 @@
     <footer>
         <div class="container">
             <div class="logo">
-                <a href="#" class="brand"><img src="src/Logo.png" alt=""></a>
+                <a href="#" class="brand"><img src="src/logo_footer.png" alt="Avance"></a>
             </div>
             <div></div>
-            <div class="info">
-                <h5><a href="#informacoes">Informações</a></h5>
-            </div>
             <div class="redes-sociais">
                 <i class="fab fa-facebook-f"></i>
             </div>
         </div>
     </footer>
+
+    <!--The popup div-->
+
+    <div id="popup" class="popup__wrapper">
+        <div class="popup__container">
+            <div class="close" id="close">
+                <a href="#" onclick="onclick='window.close()'"><img src="src/fechar.png" alt="Fechar"></a>
+            </div>
+            <h3>Não vá embora ainda... </h3>
+            <p>Não deixe essa oportunidade passar, participe agora da nossa mentoria online e avance agora para um futuro melhor. </p>
+            <a href="https://www.sympla.com.br/avance-na-sua-vida-profissional__825158" class="participar">Participar</a>
+        </div>
+    </div>
+
+    
+
+    <script type="text/javascript">
+        function onMouseOut(event) {
+          
+          if (event.clientY < 30) {
+            
+            document.removeEventListener("mouseout", onMouseOut);
+
+            
+            document.getElementById("popup").style.display = "block";
+          }
+        }
+
+        document.addEventListener("mouseout", onMouseOut);
+
+          document.getElementById("close").onclick = function(){
+          document.querySelector(".popup__wrapper").style.display = "none";
+        }
+
+    </script>
 
 
 </body>

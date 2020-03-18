@@ -53,6 +53,8 @@ a.btnComprar {
     font-size: 1.03em;
     text-align: center;
     padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 a.btnComprar:hover {
@@ -503,6 +505,9 @@ footer .container .redes-sociais i {
 }
 
 @media(max-width: 1100px) {
+    a.btnComprar {
+        width: 60%;
+    }
     .container .mentores {
         flex-flow: column;
         text-align: center;

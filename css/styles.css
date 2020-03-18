@@ -33,12 +33,12 @@ li {
     margin: auto;
 }
 
-li a {
+a {
     color: #FFF;
     text-decoration: none;
 }
 
-li a:hover {
+gita:hover {
     color: #012429;
 }
 

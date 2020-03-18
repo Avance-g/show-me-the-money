@@ -6,7 +6,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 ul {
@@ -65,7 +65,7 @@ a.btn {
     border-radius: 27px;
     text-align: center;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 43px;
     color: #212121;
     width: 260px;
@@ -103,19 +103,19 @@ a.btn:hover {
 }
 
 .container article {
-    width: 40%;
+    width: 60%;
     min-width: 500px;
 }
 
 h2 {
     color: #005662;
     margin-bottom: 15px;
-    font-size: 3.8em;
+    font-size: 48px;
     font-weight: 600;
 }
 
 .container article p {
-    font-size: 1.6em;
+    font-size: 30px;
 }
 
 .container aside {
@@ -140,6 +140,7 @@ h2 {
 .countdown h3 {
     padding-top: 50px;
     font-size: 2em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .countdown p {
@@ -192,7 +193,7 @@ main {
 
 .learn h4 {
     margin-bottom: 4px;
-    font-size: 40px;
+    font-size: 30px;
     color: #424242;
 }
 
@@ -219,7 +220,7 @@ main {
 .container .mentores .desc-mentores h3{
     color: #fff;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 48px;
     text-align: left;
 }
 
@@ -234,9 +235,9 @@ main {
 
 .container .mentores .desc-mentores p{
     color: #fff;
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 58px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
     text-align: left;
     padding-top: 30px;
     max-width: 80%;
@@ -255,19 +256,20 @@ main {
 }
 
 .container .sobre-avance h3 {
-    font-family: Roboto;
     font-weight: 500;
-    font-size: 64px;
-    line-height: 75px;
+    font-size: 48px;
+    line-height: 56px;
     text-align: left;
     color: #005662;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container .sobre-avance p{
-    font-size: 24px;
+    font-size: 30px;
     line-height: 36px;
     text-align: justify;
     color: #585858;
+    font-family: 'Roboto', sans-serif;
 
 
 }

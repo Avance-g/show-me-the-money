@@ -1,3 +1,7 @@
+html {
+    width: 100%;
+}
+
 * {
     width: 100%;
     margin: 0;
@@ -68,7 +72,6 @@ button.btn:hover {
 .container.header {
     height: 100%;
     align-items: center;
-
 }
 
 .arrow-down {
@@ -77,10 +80,11 @@ button.btn:hover {
 }
 
 .container article {
-    flex-basis: 70%;
+    width: 40%;
+    min-width: 500px;
 }
 
- h2 {
+h2 {
     color: #005662;
     margin-bottom: 15px;
     font-size: 3.8em;
@@ -100,7 +104,7 @@ button.btn:hover {
 }
 
 .container aside {
-    flex-basis: 30%;
+    width: 100%;
 }
 
 
@@ -109,11 +113,9 @@ button.btn:hover {
     width: 500px;
     height: 300px;
     border-radius: 30px;
-    margin-left: 200px;
+    margin: 0 auto;
     color: #FFF;
     text-align: center;
-
-
 }
 
 .numero{
@@ -182,6 +184,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center;
     padding-bottom: 40px;
     min-height: 814px;
 }
@@ -267,3 +270,90 @@ footer .container .redes-sociais i {
     font-size: 1.8125em;
     padding-right: 30px;
 }
+
+@media(max-width: 550px) {
+    header .btn {
+        margin-right: 0;
+    }
+    nav.navbar {
+        font-size: 0.8em;
+    }
+    .container article{
+        min-width: 300px;
+        font-size: 0.7em;
+    }
+    .container article .btn{
+        margin-left: 0;
+    }
+    .countdown {
+        font-size: 0.7em;
+        width: 100%;
+    }
+}
+
+@media(max-width: 700px) {
+    .container .mentores .img-mentores img{
+        width: 300px;
+        height: 300px;
+    }
+    .brand img {
+        width: 150px;
+        margin: 15px 0;
+    }
+    ul {
+        margin-right: -20px;
+    }
+    ul li {
+        padding: 5px;
+    }
+    ul.learn-list{
+        margin-top: 30px;
+        padding-bottom: 100px;
+    }
+    .arrow-down {
+        background-image: none;
+    }
+    .mentores {
+        margin-top: 100px;
+    }
+    .container .sobre-avance{
+        padding: 0;
+        font-size: 0.8em;
+    }
+    footer .container .info h5 {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 1100px) {
+    .container .mentores {
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .container .mentores .img-mentores img{
+        margin: 20px auto;
+        width: 60%;
+    }
+    .container .mentores .desc-mentores h3{
+        text-align: center;
+    }
+    .container .mentores .desc-mentores p{
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .container.header {
+        height: 100%;
+        align-items: center;
+        flex-flow: column;
+        align-content: center;
+    }
+    .countdown {
+        margin: 10px auto;
+    }
+    #button {
+        display: flex;
+        justify-content: center;
+    }
+}   

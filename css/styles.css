@@ -303,7 +303,7 @@ footer .container .info {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}
 
 footer .container .info h5 {
     font-size: 2.25em;
@@ -323,6 +323,50 @@ footer .container .redes-sociais i {
     text-align: right;
     font-size: 1.8125em;
     padding-right: 30px;
+}
+
+section{
+    height: 90vh;
+    background: url('../src/chainimage-blue-polygon-wallpaper-vector-wallpapers-28641.jpg') no-repeat center left #005662;
+    overflow: hidden;
+}
+
+.thank-text{
+  background: #005662;
+  text-align: center;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  width: 90vw;
+  height: 70vh;
+}
+.titulo-thkpage{
+  font-size: 10rem;
+  color: white;
+  padding-top: 20vh;
+}
+.texto-thkpage{
+  font-size: 3rem;
+  color: white;
+}
+
+@media max-width: 550px {
+  .thank-text{
+    background: #005662;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+  .titulo-thkpage{
+    font-size: 3rem;
+    color: white;
+    padding-top: 15%;
+  }
+  .texto-thkpage{
+    font-size: 1rem;
+    color: white;
+  }
 }
 
 #popup{
@@ -403,7 +447,7 @@ footer .container .redes-sociais i {
     .container.main{
         height: auto;
     }
-    
+
     h2{
         font-size: 2.8em;
     }
@@ -424,7 +468,7 @@ footer .container .redes-sociais i {
     .countdown {
         font-size: 0.7em;
         width: 100%;
-    }  
+    }
 
     #sobre{
         flex-direction: column;
@@ -436,7 +480,7 @@ footer .container .redes-sociais i {
         width: 100%;
         height: auto;
         margin-top: 40px;
-    }  
+    }
 
     .container .sobre-avance h3{
         font-size: 40px;
@@ -460,7 +504,6 @@ footer .container .redes-sociais i {
         width: 100%;
         padding-bottom: 40px;
     }
-
 }
 
 @media(max-width: 700px) {
@@ -551,7 +594,7 @@ footer .container .redes-sociais i {
     #sobre {
         flex-direction: column-reverse;
     }
-}   
+}
 
 @media(max-width: 1750px) {
     .container .img-sobre img {

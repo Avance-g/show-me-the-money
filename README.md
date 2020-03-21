@@ -7,7 +7,7 @@ https://avance.netlify.com/
 ## Informações
 Optamos pela hospedagem da Netlify pela facilidade
 
-## Implemnentações
+## Implementações
 -   [x] Responsividade em varios tamanhos de telas
 -   [x] Google Analytics
 -   [x] Facebook Pixel
